@@ -5,29 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body> 
-    Your Result
-    76
-    of 100
-  
-    Great
-    You scored higher than 65% of the people who have taken these tests.
-  
-    Summary
-  
-    Reaction
-    80 / 100
-  
-    Memory
-    92 / 100
-  
-    Verbal
-    61 / 100
-  
-    Visual
-    72 / 100
-  
-    Continue
+  <body class="bg-gray-100">
+    <div class="container mx-auto mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Cuadro Morado -->
+        <div class="col-span-1 md:col-span-1">
+          <div class="squarep">
+            <h3 class="mb-4 text-white">Your Result</h3>
+            <div class="rounded-circle-container">
+              <div class="rounded-circle bg-purple-dark text-white">
+                <p class="m-0 text-4xl font-bold">76</p>
+                <p class="m-0 text-sm">of 100</p>
+              </div>
+            </div>
+            <h3 class="mt-4 text-white">Great</h3>
+            <h6 class="mt-3 text-center text-white">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </h6>
+          </div>
+        </div>
 
+        <!-- Cuadro Blanco -->
+        <div class="col-span-1 md:col-span-1">
+          <div class="squareb">
+            <h3 class="sumary">Summary</h3>
+            <div class="block">
+              <div class="flex items-center">
+                <div class="image">
+                  <!-- SVG de reacción -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="#F55"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.25"
+                      d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5"
+                    />
+                  </svg>
+                </div>
+                <h6 class="reaction">Reaction 80/100</h6>
+              </div>
+            </div>
+            <!-- Más bloques aquí... -->
+            <div class="text-center mt-3">
+              <button
+                class="btn btn-custom bg-gray-500 text-white w-full mt-4 p-2 rounded"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
