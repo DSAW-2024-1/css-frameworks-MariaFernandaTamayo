@@ -1,0 +1,176 @@
+body {
+    padding: 5%;
+    font-family: 'HankenGrotesk-Bold', sans-serif; 
+}
+
+.squarep {
+    font-size: 14px;
+    width: 100%;
+    height: 420px;
+    background-color: rgb(123, 77, 209);
+    border: 2px solid rgb(123, 77, 209);
+    border-radius: 20%;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.squareb {
+    width: 100%;
+    height: 420px;
+    background-color: #e7e3ee;
+    border: 2px solid #e7e3ee;
+    border-radius: 20%;
+    text-align: center;
+    color: #000;
+    padding-top: 50px;
+    padding-left: -10%;
+}
+
+.bg-purple-dark {
+    background-color: hsl(276, 62%, 31%);
+}
+
+.rounded-circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Añadida para alinear elementos verticalmente */
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sumary {
+    margin-left: 2%;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+    margin-top: 2%;
+    margin-left: 3%;
+    font-weight: bold;
+}
+
+.reaction {
+    color: hwb(0 6% 45%);
+    background-color: lightcoral;
+}
+
+.memory {
+    color: hwb(66 12% 35%);
+    background-color: hsl(66, 85%, 63%);
+}
+
+.verbal {
+    color: hsl(180, 67%, 31%);
+    background-color: aquamarine;
+}
+
+.visual {
+    color: #0f046e;
+    background-color: hwb(236 49% 5%);
+}
+
+.button {
+    padding-top: 30%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.btn-custom {
+    width: 70%;
+    background-color: gray;
+    color: white;
+    margin-top: 40px;
+}
+
+.bg-purple-dark .bigger {
+    font-size: 32px; 
+}
+
+.bg-purple-dark .smaller {
+    font-size: 18px; 
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.image {
+    display: inline-block;
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+/* Estilos para vistas móviles */
+@media (max-width: 767px) {
+    .squarep,
+    .squareb {
+        width: 100%; /* Ambos cuadrados toman todo el ancho en pantallas más pequeñas */
+        margin-top: 0; /* Elimina el margen negativo superior */
+    }
+
+    .sumary {
+        margin-left: 0; /* Ajusta el margen para el encabezado de resumen */
+    }
+
+    .reaction,
+    .memory,
+    .verbal,
+    .visual {
+        margin-top: 5%; /* Agrega espacio entre los bloques en pantallas más pequeñas */
+        margin-left: 0; /* Ajusta el margen para los encabezados de bloque */
+    }
+
+    .button {
+        margin-top: 10%; /* Ajusta el margen para el botón en pantallas más pequeñas */
+    }
+
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .squarep,
+    .squareb {
+        width: 70%; /* Ajusta el ancho de los cuadrados para tabletas */
+        margin-top: -10%; /* Ajusta el margen superior para tabletas */
+    }
+    
+    .reaction,
+    .memory,
+    .verbal,
+    .visual {
+        margin-top: 3%; /* Ajusta el espacio entre los bloques en tabletas */
+    }
+
+    .button {
+        margin-top: 8%; /* Ajusta el margen para el botón en tabletas */
+    }
+}
+@media (min-width: 1024px) {
+    .button {
+        margin-top: 30px; /* Ajusta este valor según sea necesario para escritorios */
+    }
+    .squareb{
+        margin-left: -20%;
+    }
+
+
+    .btn-custom {
+        margin-top: 60px; /* Ajusta este valor para escritorios */
+    }
+}
